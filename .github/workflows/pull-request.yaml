@@ -1,8 +1,5 @@
 name: Validate Pull Request
 on:
-  push:
-    branches:
-      - 'sam-dev'
   pull_request:
     branches:
       - main
