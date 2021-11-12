@@ -1,0 +1,22 @@
+name: Validate Pull Request
+on:
+  push:
+    branches:
+      - 'sam-dev'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  tests:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-dotnet@v1.7.2
+      with:
+        dotnet-version: '6.0.x'
+    - run: |
+      cd MatrixMeshMath.Tests; \
+      dotnet restore; \
+      dotnet test 
