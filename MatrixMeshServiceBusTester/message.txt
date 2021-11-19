@@ -1,0 +1,16 @@
+{
+	"mesh": {
+		"points": [
+			{ "x": 4, "y": 4 }
+		]
+	},
+	"transformations": [
+		{
+			"type": "translate",
+			"arguments": {
+				"x": 5,
+				"y": 10.0
+			}
+		}
+	]
+}
