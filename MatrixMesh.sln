@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatrixMeshMath", "MatrixMes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatrixMeshMath.Tests", "MatrixMeshMath.Tests\MatrixMeshMath.Tests.csproj", "{DE2AB996-7B9D-4587-9329-4C44D6DC9AF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionApp1", "FunctionApp1\FunctionApp1.csproj", "{4D16940C-E2D4-45D0-AAD1-DD95F8CBFF2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixMeshFunctions", "MatrixMeshFunctions\MatrixMeshFunctions.csproj", "{E6A8052F-FCA8-4030-96CC-05FA7B6C44F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixMeshServiceBusTester", "MatrixMeshServiceBusTester\MatrixMeshServiceBusTester.csproj", "{5C32A334-4089-431E-8FF1-8AFEC3187908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixMeshFunctions.Tests", "MatrixMeshFunctions.Tests\MatrixMeshFunctions.Tests.csproj", "{559781D1-9170-4C5D-B5DA-31B8803B1949}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +27,18 @@ Global
 		{DE2AB996-7B9D-4587-9329-4C44D6DC9AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE2AB996-7B9D-4587-9329-4C44D6DC9AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE2AB996-7B9D-4587-9329-4C44D6DC9AF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D16940C-E2D4-45D0-AAD1-DD95F8CBFF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D16940C-E2D4-45D0-AAD1-DD95F8CBFF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D16940C-E2D4-45D0-AAD1-DD95F8CBFF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D16940C-E2D4-45D0-AAD1-DD95F8CBFF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6A8052F-FCA8-4030-96CC-05FA7B6C44F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6A8052F-FCA8-4030-96CC-05FA7B6C44F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6A8052F-FCA8-4030-96CC-05FA7B6C44F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A8052F-FCA8-4030-96CC-05FA7B6C44F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C32A334-4089-431E-8FF1-8AFEC3187908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C32A334-4089-431E-8FF1-8AFEC3187908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C32A334-4089-431E-8FF1-8AFEC3187908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C32A334-4089-431E-8FF1-8AFEC3187908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{559781D1-9170-4C5D-B5DA-31B8803B1949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{559781D1-9170-4C5D-B5DA-31B8803B1949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{559781D1-9170-4C5D-B5DA-31B8803B1949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{559781D1-9170-4C5D-B5DA-31B8803B1949}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
