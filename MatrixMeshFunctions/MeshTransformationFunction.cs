@@ -14,7 +14,7 @@ namespace MatrixMeshFunctions;
 
 public static class MeshTransformationFunction
 {
-    [FunctionName("Function1")]
+    [FunctionName("MeshTransformationFunction")]
     public static async Task<IActionResult> Run(
         [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
         ILogger log)
