@@ -42,7 +42,9 @@ jobs:
         dotnet build --configuration Release --output ./output
         popd
 
-    - name: 'Run Azure Functions Action'
+    - run: |
+        ls './MatrixMeshFunctions/output'
+    - name: 'Publish Azure Function'
       uses: Azure/functions-action@v1
       id: fa
       with:
