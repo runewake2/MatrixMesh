@@ -32,7 +32,8 @@ public static class MeshTransformationFunction
 
         // Convert from Mesh to Mesh Point Cloud
         var convertedMesh = MeshTransformations.ConvertMeshToPointCloud(transformedMesh);
-            
+        convertedMesh.Points = convertedMesh.Points.Append(new Vector2Data() {X = 0, Y = 0});
+
         return new OkObjectResult(convertedMesh);
         //return new OkObjectResult(responseMessage);
     }

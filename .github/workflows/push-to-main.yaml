@@ -9,26 +9,26 @@ env:
   AZURE_FUNCTIONAPP_NAME: matrixmesh  # set this to your application's name
 
 jobs:
-  # tests:
-  #   name: Test
-  #   runs-on: ubuntu-latest
-  #   strategy:
-  #     matrix:
-  #       project: 
-  #       - 'MatrixMeshMath.Tests'
-  #       - 'MatrixMeshFunctions.Tests'
-  #   steps:
-  #   - uses: actions/checkout@v2
-  #   - uses: actions/setup-dotnet@v1.7.2
-  #     with:
-  #       dotnet-version: '6.0.x'
-  #   - name: test
-  #     run: |
-  #       dotnet restore ${{ matrix.project }}
-  #       dotnet test ${{ matrix.project }}
+  tests:
+    name: Test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project: 
+        - 'MatrixMeshMath.Tests'
+        - 'MatrixMeshFunctions.Tests'
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-dotnet@v1.7.2
+      with:
+        dotnet-version: '6.0.x'
+    - name: test
+      run: |
+        dotnet restore ${{ matrix.project }}
+        dotnet test ${{ matrix.project }}
 
   deploy:
-    #needs: tests
+    needs: tests
     name: Deploy
     runs-on: ubuntu-latest
     steps:
