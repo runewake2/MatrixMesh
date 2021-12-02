@@ -14,7 +14,7 @@ namespace MatrixMeshFunctions;
 
 public static class MeshTransformationFunction
 {
-    [FunctionName("Function1")]
+    [FunctionName("MeshTransformationFunction")]
     public static async Task<IActionResult> Run(
         [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
         ILogger log)
@@ -32,8 +32,7 @@ public static class MeshTransformationFunction
 
         // Convert from Mesh to Mesh Point Cloud
         var convertedMesh = MeshTransformations.ConvertMeshToPointCloud(transformedMesh);
-            
+
         return new OkObjectResult(convertedMesh);
-        //return new OkObjectResult(responseMessage);
     }
 }
